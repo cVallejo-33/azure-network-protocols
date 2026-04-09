@@ -25,10 +25,22 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Step 1 Environment Setup
+
+Provisioned virtual machines in Microsoft Azure
+Configured networking settings, including virtual networks and firewall rules
+Established remote access using RDP (Windows) and SSH (Linux)
+- Step 2 System Configuration & Connectivity Testing
+
+Installed and configured necessary tools on both Windows and Ubuntu systems
+Verified connectivity between machines using protocols such as ICMP (ping) and SSH
+Tested web traffic using HTTP/HTTPS to ensure proper network communication
+- Step 3 Network Traffic Analysis
+
+Captured live network traffic using Wireshark
+Analyzed different protocol behaviors (DNS queries, HTTP requests, ICMP packets, etc.)
+Identified packet structures and troubleshooting insights from captured data 
+
 
 <h2>Actions and Observations</h2>
 
