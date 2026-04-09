@@ -37,16 +37,18 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 </p>
 <p>
-Step 1: Viewing the Networks Security Group rules within the Azure Portal. Inbound rules are shown here, listing rules that allow and deny specific traffic to the Virtual Machine 
+Step 1: View the Network Security Group rules in the Azure Portal. Inbound rules are shown here, listing rules that allow and deny specific traffic to the Virtual Machine 
 </p>
 <br />
 
 <p>
-<img width="561" height="313" alt="image" src="https://github.com/user-attachments/assets/c627cfac-50d2-4476-b14e-64ba200d84cc" />
+<img width="562" height="251" alt="image" src="https://github.com/user-attachments/assets/27098ac7-41d6-4457-bf71-7bdd77e3a6b6" />
+
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+Step 2: Capturing SSH traffic using Wireshark. This screenshot shows Wireshark capturing and analyzing SSH traffic between two Azure VM's. The traffic is displayed in Wireshark.
 </p>
 <br />
 
@@ -55,6 +57,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+Step 3: Blocking SSH traffic by adjusting NSG rules. Here, the NSG rule for port 22 is changed from "Allow" to Deny, blocking SSH traffic to the VM. On the right, Wireshark captures a failed SSH connection attempt after adjusting the firewall rule. 
 </p>
 <br />
